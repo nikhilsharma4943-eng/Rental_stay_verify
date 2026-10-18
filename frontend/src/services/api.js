@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
+const API_BASE = `${import.meta.env.VITE_API_BASE_URL || 'https://rental-stay-verify.onrender.com'}/api`;
 
 export async function request(endpoint, options = {}) {
   const token = localStorage.getItem('stayverify_token');
